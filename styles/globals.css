@@ -1,0 +1,51 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(135deg, AliceBlue, Lavender, LightBlue);
+  background-attachment: fixed;
+}
+
+body {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  min-height: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none;
+  color: RoyalBlue;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav a.active {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+nav a:hover {
+  background: rgba(0, 0, 64, 0.1);
+}
+
+pre {
+  background: rgba(128, 128, 128, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow-x: scroll;
+}
