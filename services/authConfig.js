@@ -1,6 +1,7 @@
 const clientId = process.env.NEXT_PUBLIC_AZURE_B2C_CLIENT_ID;
 const b2cPolicy = process.env.NEXT_PUBLIC_AZURE_B2C_POLICY;
 const tenant = process.env.NEXT_PUBLIC_AZURE_B2C_TENANT_NAME;
+const hideConsoleLogging = process.env.NEXT_PUBLIC_MSAL_DEBUG_ON_CONSOLE !== "on";
 
 export const msalConfig = {
   auth: {
@@ -10,6 +11,15 @@ export const msalConfig = {
     redirectUri: "/",
     postLogoutRedirectUri: "/",
   },
+  system: {
+    loggerOptions: {
+      loggerCallback(_level, message, _containsPii) {
+        if (!hideConsoleLogging) {
+          console.log(message);
+        }
+      }
+    }
+  }
 };
 
 export const loginRequest = {

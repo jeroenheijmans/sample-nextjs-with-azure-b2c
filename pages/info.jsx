@@ -1,9 +1,6 @@
-import { PageHeader } from '../components/PageHeader'
-
 export default function Info() {
   return (
     <div>
-      <PageHeader></PageHeader>
       <h1>💡 Info</h1>
       <p>
         This is a minimal sample of NextJS using the MSAL authentication libraries from Microsoft.
