@@ -22,6 +22,6 @@ export const msalConfig = {
   },
 };
 
-export const loginRequest = {
+export const authenticationRequest = {
   scopes: ["openid", "profile", "email"],
 };

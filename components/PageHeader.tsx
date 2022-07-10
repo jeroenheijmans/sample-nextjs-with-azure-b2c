@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMsal, AuthenticatedTemplate, UnauthenticatedTemplate } from "@azure/msal-react";
-import { loginRequest } from "../services/authConfig";
+import { authenticationRequest } from "../services/authConfig";
 
 export function PageHeader() {
   const { instance } = useMsal();
@@ -10,7 +10,7 @@ export function PageHeader() {
 
   const handleLogin = () => {
     // TODO: Handle promise then/error
-    instance.loginRedirect(loginRequest);
+    instance.loginRedirect(authenticationRequest);
   };
 
   const handleLogout = () => {
