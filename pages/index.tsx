@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Router from "next/router";
-import LoadingOverlay from "../components/LoadingOverlay";
+import { LoadingOverlay } from "../components/LoadingOverlay";
 
 export default function Index() {
   useEffect(() => {
