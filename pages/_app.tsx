@@ -13,12 +13,23 @@ export default function MyApp({ Component, pageProps }) {
   msalInstance.setNavigationClient(navigationClient);
 
   useEffect(() => {
-    const logger = (url) => console.log("===> routeChangeStart to", url);
+    const logger = (url) => console.log("⏭ routeChangeStart to", url);
     router.events.on("routeChangeStart", logger);
     return () => {
       router.events.off("routeChangeStart", logger);
     };
   });
+
+  if (router.asPath.startsWith("/openid-redirect")) {
+    console.log("📣 Targeting openid-redirect. Giving MsalProvider some time to handle redirect to target page.");
+    return (
+      <MsalProvider instance={msalInstance}>
+        <Component {...pageProps} />
+      </MsalProvider>
+    );
+  }
+
+  console.log("📣 Rendering full application...");
 
   return (
     <>

@@ -10,7 +10,7 @@ export const msalConfig: Configuration = {
     clientId,
     authority: `https://${tenant}.b2clogin.com/${tenant}.onmicrosoft.com/${b2cPolicy}`,
     knownAuthorities: [`${tenant}.b2clogin.com`],
-    redirectUri: "/",
+    redirectUri: "/openid-redirect",
     postLogoutRedirectUri: "/",
   },
   system: {
