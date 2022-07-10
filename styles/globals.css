@@ -13,13 +13,13 @@ html {
   padding: 0 20px;
 }
 
-body {
+.appContainer {
   padding: 20px;
-  margin: 20px auto;
+  margin: 20px auto 0;
   max-width: 800px;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.8);
-  min-height: 50%;
+  min-height: 50vh;
 }
 
 * {
@@ -41,6 +41,21 @@ nav a.active {
 
 nav a:hover {
   background: rgba(0, 0, 64, 0.1);
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: rgba(40, 80, 180, 0.7);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgba(40, 80, 180, 0.7);
+  text-decoration: underline;
 }
 
 pre {

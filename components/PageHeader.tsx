@@ -25,16 +25,16 @@ export function PageHeader() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav>
-        <Link activeClassName="active" href="/home">
+        <Link href="/home">
           <a className={router.pathname === "/home" ? "active" : ""}>Home</a>
         </Link>
-        <Link activeClassName="active" href="/me">
+        <Link href="/me">
           <a className={router.pathname === "/me" ? "active" : ""}>My Details 🔒</a>
         </Link>
-        <Link activeClassName="active" href="/faq">
+        <Link href="/faq">
           <a className={router.pathname === "/faq" ? "active" : ""}>FAQ</a>
         </Link>
-        <Link activeClassName="active" href="/info">
+        <Link href="/info">
           <a className={router.pathname === "/info" ? "active" : ""}>Info</a>
         </Link>
         <div style={{ float: "right" }}>
