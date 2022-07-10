@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Router from "next/router";
-import LoadingAppOverlay from "../components/LoadingAppOverlay";
+import LoadingOverlay from "../components/LoadingOverlay";
 
 let x = 1;
 
@@ -10,6 +10,6 @@ export default function Index() {
     return () => clearTimeout(delay);
   });
   return <>
-    <LoadingAppOverlay></LoadingAppOverlay>
+    <LoadingOverlay></LoadingOverlay>
   </>;
 }
