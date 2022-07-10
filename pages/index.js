@@ -6,9 +6,5 @@ export default function Index() {
   useEffect(() => {
     Router.replace("/home");
   });
-  return (
-    <>
-      <LoadingOverlay></LoadingOverlay>
-    </>
-  );
+  return <LoadingOverlay></LoadingOverlay>;
 }
