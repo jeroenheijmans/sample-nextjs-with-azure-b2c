@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
 
 html {
@@ -62,9 +62,14 @@ pre {
   font-size: 2rem;
   animation: bouncing 0.4s alternate infinite ease-in;
 }
+
 @keyframes bouncing {
-  0%   { padding-top: 100px; }
-  100% { padding-top: 120px; }
+  0% {
+    padding-top: 100px;
+  }
+  100% {
+    padding-top: 120px;
+  }
 }
 
 .loading-overlay {

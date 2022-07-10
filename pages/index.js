@@ -3,6 +3,12 @@ import Router from "next/router";
 import LoadingOverlay from "../components/LoadingOverlay";
 
 export default function Index() {
-  useEffect(() => { Router.replace("/home"); });
-  return <><LoadingOverlay></LoadingOverlay></>;
+  useEffect(() => {
+    Router.replace("/home");
+  });
+  return (
+    <>
+      <LoadingOverlay></LoadingOverlay>
+    </>
+  );
 }

@@ -1,11 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import {
-  useMsal,
-  AuthenticatedTemplate,
-  UnauthenticatedTemplate,
-} from "@azure/msal-react";
+import { useMsal, AuthenticatedTemplate, UnauthenticatedTemplate } from "@azure/msal-react";
 import { loginRequest } from "../services/authConfig";
 
 export function PageHeader() {
@@ -41,7 +37,7 @@ export function PageHeader() {
         <Link activeClassName="active" href="/info">
           <a className={router.pathname === "/info" ? "active" : ""}>Info</a>
         </Link>
-        <div style={{float: "right"}}>
+        <div style={{ float: "right" }}>
           <UnauthenticatedTemplate>
             <a href="#" onClick={() => handleLogin()}>
               👤 Login

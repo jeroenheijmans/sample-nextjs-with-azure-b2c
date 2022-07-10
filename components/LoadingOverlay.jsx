@@ -1,3 +1,3 @@
 export default function LoadingOverlay() {
-  return (<div className="loading-app-overlay">Loading...</div>);
+  return <div className="loading-app-overlay">Loading...</div>;
 }

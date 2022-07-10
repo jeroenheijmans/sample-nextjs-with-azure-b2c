@@ -17,9 +17,9 @@ export const msalConfig = {
         if (!hideConsoleLogging) {
           console.log(message);
         }
-      }
-    }
-  }
+      },
+    },
+  },
 };
 
 export const loginRequest = {

@@ -6,5 +6,5 @@ export default function Home() {
         <p>You&apos;re at the home page.</p>
       </div>
     </div>
-  )
+  );
 }
