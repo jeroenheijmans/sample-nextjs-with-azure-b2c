@@ -29,8 +29,8 @@ export function PageHeader() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav>
-        <Link activeClassName="active" href="/">
-          <a className={router.pathname === "/" ? "active" : ""}>Home</a>
+        <Link activeClassName="active" href="/home">
+          <a className={router.pathname === "/home" ? "active" : ""}>Home</a>
         </Link>
         <Link activeClassName="active" href="/me">
           <a className={router.pathname === "/me" ? "active" : ""}>My Details 🔒</a>
